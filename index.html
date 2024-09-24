@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon32.png">
+    <link rel="stylesheet" href="style.css">
+    <title>SIB-COINS - компания для коллекционеров</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@700&family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__items">
+                <a href="#" class="header__logo">
+                    <img src="logo.svg" alt="Логотип компании Sib-coins">
+                </a>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <nav class="header__menu">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#hero" class="header__link">главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#about" class="header__link">о нас</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#auctions" class="header__link">аукционы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#services" class="header__link">услуги</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#reviews" class="header__link">отзывы</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#contact" class="header__link">контакты</a>
+                    </li>
+                </ul>
+                <ul class="header__socialmedia">
+                    <li class="header__smItem">
+                        <a class="header__smLink" href="https://vk.com/sib_coins" target="_blank" aria-label="Группа vk Sib-coins">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="10.5" cy="10.5" r="10.5" fill="white"/>
+                                <path d="M4.96573 7H3.50403C3.09073 7 3 7.19153 3 7.41331C3 7.79637 3.49395 9.71169 5.29839 12.252C6.50806 13.9859 8.20161 14.9234 9.74395 14.9234C10.6714 14.9234 10.7823 14.7117 10.7823 14.3589V13.0484C10.7823 12.6351 10.873 12.5444 11.1653 12.5444C11.377 12.5444 11.75 12.6552 12.6169 13.4819C13.6048 14.4698 13.7661 14.9133 14.3206 14.9133H15.7823C16.1956 14.9133 16.4073 14.7016 16.2863 14.2984C16.1552 13.8851 15.6815 13.2903 15.0565 12.5847C14.7137 12.1815 14.2097 11.748 14.0484 11.5363C13.8367 11.254 13.8972 11.1331 14.0484 10.8911C14.0484 10.8911 15.8226 8.39113 16.0141 7.53427C16.1048 7.22177 16.0141 7 15.5706 7H14.1089C13.7359 7 13.5645 7.19153 13.4738 7.41331C13.4738 7.41331 12.7278 9.21774 11.6794 10.3972C11.3367 10.7399 11.1855 10.8407 11.004 10.8407C10.9133 10.8407 10.7722 10.7298 10.7722 10.4274V7.53427C10.7722 7.16129 10.6613 7 10.3589 7H8.07056C7.83871 7 7.69758 7.17137 7.69758 7.33266C7.69758 7.68548 8.22177 7.76613 8.27218 8.75403V10.9012C8.27218 11.375 8.19153 11.4556 8 11.4556C7.50605 11.4556 6.30645 9.64113 5.59073 7.56452C5.4496 7.16129 5.30847 7 4.93548 7H4.96573Z" fill="#9B191F"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__smItem">
+                        <a class="header__smLink" href="mailto:sibcoins@gmail.com" target="blank">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_73_2179)">
+                                <circle cx="10.5" cy="10.5" r="8.5" fill="#9B191F"/>
+                                <mask id="mask0_73_2179" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                <path d="M20.9778 0.0220947H0V21H20.9778V0.0220947Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_73_2179)">
+                                <path d="M10.4978 0C4.69871 0 0 4.67992 0 10.4558C0 16.2317 4.69871 20.9116 10.4978 20.9116C16.2969 20.9116 20.9956 16.2273 20.9956 10.4558C20.9956 4.68434 16.2969 0 10.4978 0ZM10.4978 3.67235L16.7095 7.5303H4.28608L10.4978 3.67235ZM16.7894 13.6951C16.7894 14.3138 16.2835 14.8175 15.6624 14.8175H5.33319C4.71202 14.8175 4.20621 14.3138 4.20621 13.6951V7.77778C4.20621 7.71149 4.21509 7.64962 4.22396 7.58775L10.1606 11.2734C10.1606 11.2734 10.1739 11.2822 10.1828 11.2866C10.1916 11.2866 10.2005 11.2955 10.2049 11.2999C10.2449 11.322 10.2892 11.3396 10.3336 11.3485C10.3381 11.3485 10.3425 11.3485 10.3469 11.3485C10.3957 11.3617 10.4445 11.3662 10.4933 11.3662C10.5422 11.3662 10.591 11.3573 10.6398 11.3485C10.6398 11.3485 10.6486 11.3485 10.6531 11.3485C10.6974 11.3352 10.7418 11.322 10.7817 11.2999C10.7906 11.2999 10.7995 11.291 10.8039 11.2866C10.8128 11.2866 10.8172 11.2778 10.8261 11.2734L16.7627 7.58775C16.7716 7.64962 16.7805 7.71591 16.7805 7.77778V13.6951H16.7894Z" fill="white"/>
+                                </g>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_73_2179">
+                                <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="header__smItem">
+                        <a class="header__smLink" href="https://wa.me/79232433336" target="blank">
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_73_2185)">
+                                <circle cx="10.5" cy="10.5" r="8.5" fill="#9B191F"/>
+                                <mask id="mask0_73_2185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="21">
+                                <path d="M20.9778 0.0221252H0V21H20.9778V0.0221252Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_73_2185)">
+                                <path d="M10.4978 0C4.70268 0 0 4.68387 0 10.4558C0 16.2277 4.70268 20.9115 10.4978 20.9115C16.2929 20.9115 20.9956 16.2277 20.9956 10.4558C20.9956 4.68387 16.2973 0 10.4978 0ZM14.7653 15.1396V15.865C14.7653 16.2631 14.4411 16.5904 14.037 16.5904H6.77649C5.97272 16.5904 5.32438 15.9446 5.32438 15.1441V6.03728C5.32438 5.23673 5.97272 4.59099 6.77649 4.59099H14.037C14.4367 4.59099 14.7653 4.91386 14.7653 5.31634V15.1396ZM16.2174 6.03728V15.8606C16.2174 16.2586 15.8932 16.5859 15.4935 16.5859H15.2982C15.4225 16.3736 15.4935 16.1259 15.4935 15.8606V5.31192C15.4935 5.04655 15.4225 4.80329 15.2982 4.59099H15.4935C15.8932 4.59099 16.2174 4.91386 16.2174 5.31192V6.03728Z" fill="white"/>
+                                </g>
+                                <path d="M12.2917 11.5394C12.2917 11.5394 12.0164 11.2121 11.7144 11.4377C11.488 11.6057 11.0839 11.9817 10.9862 12.0701C10.9862 12.0701 10.3067 11.7119 9.90708 11.3802C9.31203 10.8936 8.91681 10.2921 8.7081 9.95156L8.55267 9.65965C8.60596 9.60215 9.02339 9.15986 9.20101 8.9166C9.42749 8.61584 9.09888 8.34162 9.09888 8.34162C9.09888 8.34162 8.17521 7.42165 7.9665 7.24031C7.75779 7.05898 7.51355 7.1607 7.51355 7.1607C7.07392 7.44377 6.61209 7.69145 6.58545 8.88122C6.58545 9.99579 7.43362 11.1413 8.3484 12.0303C9.26762 13.0343 10.5288 14.0428 11.75 14.0383C12.9445 14.0118 13.1932 13.5562 13.4774 13.1139C13.4774 13.1139 13.5795 12.8751 13.3975 12.6628C13.2154 12.4549 12.2917 11.535 12.2917 11.535V11.5394Z" fill="white"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_73_2185">
+                                <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="visyally-hidden">SIB-COINS - компания для коллекционеров</h1>
+
+        <section class="hero" id="hero">
+            <div class="container">
+                <div class="hero__box">
+                    <h2 class="visyally-hidden">SIB-COINS - компания для коллекционеров</h2>
+                    <img class="hero__img_name" src="company-name.svg" alt="SIB-COINS - компания для коллекционеров">
+                    <img class="hero__img_logo" src="big-logo.svg" alt="логотип компании Sib-coins">
+                    <a href="https://wa.me/79232433336" target="blank">
+                        <button class="hero__btn">Связаться</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="about__box">
+                    <div class="about__box-text">
+                        <div class="about__box-container">
+                            <h2 class="about__title">О&nbsp;нас</h2>
+                            <p class="about__content">
+                                <b>«SIB-COINS»</b> <br> Пространство для Коллекционеров! 
+                                <br>Наш ресурс создан как для покупателей, так и для продавцов! 
+                                <br>В режиме наших регулярных аукционов Вы <br> можете предложить свой лот публике. 
+                                <br>Охват участников торгов со всего мира <br> гарантирует высокий итог стоимости Ваших <br> раритетов и позволяет получить больший доход!
+                                <br><br>За более чем 15 летний опыт работы в сфере коллекционирования, Компанией «SIB-COINS» были отправлены товары на все континенты и больше 40.000 положительных отзывов на интернет-площадках!
+                            </p>
+                            <p class="about__slogan">Приобрести редкий экземпляр по&nbsp;выгодной цене - <br> это &laquo;SIB-COINS&raquo;</p>
+                        </div>
+                    </div>
+                    <div class="about__box-pictures">
+                        <div class="wrapper">
+                            <img src="about-pic1.png" alt="предметы старины">
+                            <img src="about-pic2.png" alt="предметы старины">
+                            <img src="about-pic3.png" alt="предметы старины">
+                            <img src="about-pic4.png" alt="предметы старины">
+                            <img src="about-pic5.png" alt="">
+                            <img src="about-pic6.png" alt="">
+                            <img src="about-pic7.png" alt="">
+                            <img src="about-pic8.png" alt="">
+                            <img src="about-pic1.png" alt="">
+                            <img src="about-pic2.png" alt="">
+                            <img src="about-pic3.png" alt="">
+                            <img src="about-pic4.png" alt="">
+                            <img src="about-pic5.png" alt="">
+                            <img src="about-pic6.png" alt="">
+                            <img src="about-pic7.png" alt="">
+                            <img src="about-pic8.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="auctions" id="auctions">
+            <div class="container">
+                <div class="auctions__title-box">
+                    <h2 class="auctions__title">Аукционы</h2>
+                </div>
+                <ul class="auctions__advantages">
+                    <li>Более 20 000 успешно проведенных сделок!</li>
+                    <li>Полная безопасность и конфиденциальность!</li>
+                    <li>Бесплатная экспресс-оценка Вашего предмета по фото!</li>
+                </ul>
+                <div class="auctions__hammer">
+                    <img src="auction-pic.png" alt="Аукционы-молоток">
+                </div>
+                <div class="auctions__btn-box">
+                <a href="https://meshok.net/listing?opt=2&user=661090" target="_blank">
+                    <button class="auctions__btn">НА АУКЦИОН</button>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="container">
+                <div class="services__box">
+                <h2 class="services__title">Услуги</h2>
+                <ul class="services__list">
+                    <li class="services__item services__item-magnifier">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Бесплатная оценка!
+                        </a>
+                    </li>
+                    <li class="services__item services__item-treasure">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Покупка любых коллекций
+                        </a>
+                    </li>
+                    <li class="services__item services__item-man">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Продажа товаров для коллекционеров
+                        </a>
+                    </li>
+                    <li class="services__item services__item-car">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Ведение частных коллекций, Музеев
+                        </a>
+                    </li>
+                    <li class="services__item services__item-hammer">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Проведение <br> Онлайн Аукционов
+                        </a>
+                    </li>
+                    <li class="services__item services__item-chest">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Товары <br> под заказ
+                        </a>
+                    </li>
+                    <li class="services__item services__item-emblem">
+                        <a class="services__item-title" href="https://wa.me/79232433336" target="blank">
+                            Сибирская Ярмарка Коллекционеров
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+            <div class="services__bg"></div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <div class="reviews__box">
+                    <h2 class="reviews__title">Отзывы</h2>
+                    <ul class="reviews__list">
+                        <li class="reviews__item">
+                            <div class="reviews__text-box reviews__item-michael">
+                                <p class="reviews__text">
+                                    <span class="reviews__name">Michael_Shane</span><br>
+                                Всё отлично! Коммуникабельность и ответственность на высоте! Рекомендую!</p>
+                            </div>
+                            <img class="reviews__stars" src="rating-stars.png" alt="рейтинг">
+                        </li>
+                        <li class="reviews__item reviews__item-reverse">
+                            <img class="reviews__stars" src="rating-stars.png" alt="рейтинг">
+                            <div class="reviews__text-box reviews__item-ribka">
+                                <p class="reviews__text reviews__text-end">
+                                    <span class="reviews__name">рыбка777</span><br>
+                                    Отличный продавец! Лот полностью соответствует описанию,
+                                    качественно упакован, быстро отправлен. Вежливый и внимательный
+                                    продавец! С удовольствием встречусь на Мешке вновь!
+                                </p>
+                            </div>
+                        </li>
+                        <li class="reviews__item">
+                            <div class="reviews__text-box reviews__item-sergey">
+                                <p class="reviews__text">
+                                    <span class="reviews__name">sergey8</span><br>
+                                    Очень ответственный продавец Советую всем</p>
+                            </div>
+                            <img class="reviews__stars" src="rating-stars.png" alt="рейтинг">
+                        </li>
+                        <li class="reviews__item reviews__item-reverse">
+                            <img class="reviews__stars" src="rating-stars.png" alt="рейтинг">
+                            <div class="reviews__text-box reviews__item-sagaalena">
+                                <p class="reviews__text reviews__text-end">
+                                    <span class="reviews__name">sagaalena</span><br>
+                                    Монеты полностью соответствуют фотографии.
+                                    Пришли быстро, отлично упакованные. Все отлично. Рекомендую
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <a href="https://meshok.net/info/661090/salesman " target="_blank">
+                        <button class="reviews__btn">Перейти</button>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__whole-box">
+                    <h2 class="contact__title">Контакты</h2>
+                <div class="contact__box">
+                    <div class="contact__info">
+                        <div style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.ru/maps/org/sib_coins/41915669451/?utm_medium=mapframe&utm_source=maps" 
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Sib-coins</a>
+                            <a href="https://yandex.ru/maps/65/novosibirsk/category/antique_store/184107981/?utm_medium=mapframe&utm_source=maps" 
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Антикварный магазин в Новосибирске</a>
+                            <iframe src="https://yandex.ru/map-widget/v1/?ll=82.929193%2C55.062421&mode=search&oid=41915669451&ol=biz&z=13.83" 
+                                width="373" height="372" frameborder="0" allowfullscreen="true" style="position:relative;">
+                            </iframe>
+                        </div>
+                        <div class="contact__text-boxOne">
+                            <p class="contact__text">
+                                Наш Магазин с выставочным залом
+                                находится по адресу: <br>
+                                г. Новосибирск
+                                Красный Проспект д. 165/1.</p>
+                        </div>
+                    </div>
+                    <div class="contact__company-name">
+                        <div class="contact__company-name-bg">
+                            <img src="logo-albo.svg" alt="Логотип компании Albo Numismatico">
+                        </div>
+                        <div class="contact__text-boxTwo">
+                            <p class="contact__text">
+                            Мы работаем совместно с Профессионалами 
+                            своего дела и крупнейшими в России
+                            производителями альбомов для монет - 
+                            «Albonumismatico»</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact__btn-container">
+                    <a href="https://albonumismatico.com/" target="_blank">
+                        <button class="contact__btn">ПЕРЕЙТИ  в магазин</button>
+                    </a>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <img src="logo.svg" alt="Логотип компании Sib-coins">
+                <p class="footer__copyright">&copy;Sib-coins, 2024</p>
+            </div>
+            <div class="footer__link">
+                <a class="footer__yanaosInfo" href="https://yanaos-portfolio.glitch.me/" target="_blank">Developed by <span class="footer__yanaosName">YanaOS</span></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
