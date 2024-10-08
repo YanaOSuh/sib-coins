@@ -252,7 +252,7 @@ h1, h2, h3, p {
 }
 .about__content {
     font-family: "Montserrat", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
     color: #000;
     margin-top: 40px;
@@ -310,7 +310,8 @@ h1, h2, h3, p {
 }
 @keyframes scrolling {
     to {
-        translate: calc(-8 * 12rem);
+        /* translate: calc(-8 * 12rem); */
+        translate: calc(-12 * 12rem);
     }
 }
 
@@ -686,7 +687,6 @@ h1, h2, h3, p {
     position: relative;
     font-family: "NEXT ART", sans-serif;
     font-size: 14px;
-    line-height: 0.79;
     text-transform: uppercase;
     text-align: center;
     color: #fff;
@@ -772,13 +772,14 @@ h1, h2, h3, p {
     display: flex;
     flex-direction: column;
     width: 372px;
-    height: 474px;
+    height: 510px;
 }
 .contact__company-name {
     display: flex;
     flex-direction: column;
     width: 372px;
-    height: 474px;
+    /* height: 474px; */
+    height: 500px;
 }
 .contact__company-name-bg {
     background: #9b191f;
@@ -786,23 +787,55 @@ h1, h2, h3, p {
     justify-content: center;
     align-items: center;
     width: 372px;
-    height: 372px; 
+    /* height: 372px;  */
+    /* height: 390px;  */
+    height: 375px; 
 }
 .contact__text-boxOne {
     max-width: 320px;
-    margin-top: 33px;
+    /* margin-top: 33px; */
+    margin-top: 20px;
 }
 .contact__text-boxTwo {
     max-width: 353px;
-    margin-top: 33px;
+    /* margin-top: 33px; */
+    margin-top: 20px;
 }
 .contact__text {
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 1;
     color: #000;
 }
+.contact__text-phoneBox {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1;
+    color: #000;
+    margin-top: 10px;
+}
+.contact__text-phone {
+    position: relative;
+}
+.contact__text-phone:after {
+	display: block;
+	position: absolute;
+	left: 0;
+    bottom: -3px;
+	width: 0;
+	height: 1px;
+	background-color: #282525;
+	content: "";
+	transition: width 0.3s ease-out;
+}
+.contact__text-phone:hover:after,
+.contact__text-phone:focus:after {
+	width: 100%;
+}
+
+
 .contact__btn-container {
     display: flex;
     justify-content: center;
@@ -1073,7 +1106,7 @@ h1, h2, h3, p {
     .auctions__advantages li{
         font-family: "Montserrat", sans-serif;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1;
         color: #000;
         text-align: center;
@@ -1121,6 +1154,10 @@ h1, h2, h3, p {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 20px;
+    }
+    .contact__text-boxOne, .contact__text-boxTwo {
+        margin-top: 15px;
     }
 }
 @media all and (max-width:653px) {
@@ -1166,6 +1203,9 @@ h1, h2, h3, p {
     }
     .about__box-container {
         width: 350px;
+    }
+    .about__box-text {
+        height: 650px;
     }
     .about__content {
         margin-top: 20px;
@@ -1243,13 +1283,16 @@ h1, h2, h3, p {
     .reviews__item-sagaalena::after {
         margin-left: -40px;
     }
+    .contact__box {
+        gap: 60px;
+    }
     .contact__company-name, .contact__info {
         align-items: center;
     }
     .contact__company-name {
         height: 372px;
     }
-    .contact__text {
+    .contact__text, .contact__text-phoneBox {
         text-align: center;
         font-weight: 500;
     }
